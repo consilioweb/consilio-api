@@ -1,0 +1,57 @@
+/*
+Theme Name: Consilio
+Theme URI: https://consilio.com.br/
+Author: Humberto Martins
+Author URI: https://consilio.com.br/
+Description: Tema para integração com aplicação desenvolvida em NuxtJS.
+Version: 1.0.0
+License: MIT
+Contributors: Lincoln Mendes, Gabriel Verde
+Text Domain: api_consilio
+Tags: consilio, agencia consilio, agencia de marketing digital, marketing digital em goiania
+*/
+
+.column-author,
+.column-date,
+.column-client_case,
+.column-customer_testimonial,
+.column-position_team {
+  width: 15% !important;
+}
+
+#client_view .components-base-control__field {
+  position: relative;
+  outline: none;
+  width: 100%;
+  text-align: left;
+  border: none;
+  box-shadow: none;
+  transition: background 0.1s ease-in-out;
+  padding-top: 5px;
+}
+
+#client_view select {
+  width: 85%;
+  margin-top: 10px;
+}
+
+#customer_view h2,
+#client_view h2 {
+  font-weight: 600;
+  color: #191e23 !important;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+#customer_view button,
+#client_view button {
+  color: #191e23 !important;
+}
+
+/**
+* Correction height field ACF
+*/
+
+.acf-input-prepend, .acf-input-append {
+    padding: 4px 8px !important;
+}
