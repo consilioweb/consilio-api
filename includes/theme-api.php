@@ -7,7 +7,8 @@
  */
 function get_menu_principal()
 {
-  return wp_get_nav_menu_items(4);
+  $response = wp_get_nav_menu_items(4); // data => array of returned data
+  return new WP_REST_Response($response, 200);
 }
 add_action('rest_api_init', function () {
   register_rest_route('wp/v2', 'menu-principal', array(

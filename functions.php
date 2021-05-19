@@ -87,8 +87,8 @@ add_theme_support('post-thumbnails');
 /*
  * Custom logo login and URL
  */
-add_filter('login_headerurl', create_function(false, "return get_bloginfo('url');"));
-add_filter('login_headertitle', create_function(false, "return get_bloginfo('name');"));
+add_filter('login_headerurl', function () { return get_bloginfo('url'); });
+add_filter('login_headertitle', function () { return get_bloginfo('name'); });
 
 /*
  * Custom logo image for login page
